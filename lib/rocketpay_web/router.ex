@@ -14,8 +14,6 @@ defmodule RocketpayWeb.Router do
   scope "/api", RocketpayWeb do
     pipe_through :api
 
-    get "/:filename", WelcomeController, :index
-
     post "/users", UsersController, :create
   end
 
